@@ -60,7 +60,7 @@ export default function AppNavbar() {
 
       <NavbarMenu>
         <NavbarMenuItem>
-          <ThemeSwitcher showLabel />
+          <ThemeSwitcher />
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
