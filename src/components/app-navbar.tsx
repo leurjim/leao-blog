@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 import {
@@ -10,7 +11,6 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react";
-import { IconUserCode } from "@tabler/icons-react";
 
 import { ThemeSwitcher } from "./theme-switcher";
 
@@ -40,7 +40,13 @@ export default function AppNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand className="gap-2">
-          <IconUserCode />
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
           <p className="text-xl font-bold text-inherit">Leao Urbina</p>
         </NavbarBrand>
       </NavbarContent>
