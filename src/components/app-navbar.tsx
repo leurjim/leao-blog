@@ -47,7 +47,7 @@ export default function AppNavbar() {
             height={50}
             className="rounded-full"
           />
-          <p className="text-xl font-bold text-inherit">Leao Urbina</p>
+          <p className="text-2xl font-bold text-inherit">Leao Urbina</p>
         </NavbarBrand>
       </NavbarContent>
 
