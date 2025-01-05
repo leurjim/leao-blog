@@ -15,15 +15,15 @@ export default function PostPage({ params }: PostPageProps) {
     return <div>No post here!</div>;
   }
   return (
-    <Card className="mx-auto max-w-xl py-8">
+    <Card className="mx-auto mt-4 max-w-xl py-8">
       <CardBody className="mb-8 text-center">
         <time dateTime={post.date}>
           {format(parseISO(post.date), "LLLL d, yyyy")}
         </time>
         <h1>{post.title}</h1>
       </CardBody>
-      <div
-        className="text-sm [&>*:last-child]:mb-0 [&>*]:mb-3"
+      <CardBody
+        className="text-sm [&>*:last-child]:mb-0 [&>*]:mb-4"
         dangerouslySetInnerHTML={{ __html: post.body.html }}
       />
     </Card>
