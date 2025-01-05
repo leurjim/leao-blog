@@ -3,7 +3,7 @@ import { Card, CardBody, Link } from "@nextui-org/react";
 
 export default function Projects() {
   return (
-    <section className="px-4 py-16 md:mx-auto md:my-0 md:max-w-[1200px]">
+    <section className="px-4 py-16 md:mx-auto md:my-0 md:max-w-[1024px]">
       <h2 className="m-0 mb-10 text-3xl">Projects I'm proud of</h2>
       <Card className="gap-2 px-8 md:grid md:grid-cols-10">
         <CardBody className="md:order-2 md:col-start-5 md:col-end-11 md:row-start-1 md:row-end-2 md:text-right">
