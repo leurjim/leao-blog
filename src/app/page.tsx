@@ -29,8 +29,8 @@ export default function Home() {
   );
 
   return (
-    <Card className="mx-auto mt-4 grid max-w-md grid-cols-12 px-4 py-16 md:max-w-[1024px]">
-      <CardBody className="col-span-12 mx-auto my-0 pb-40 pl-4 pr-4 pt-16">
+    <Card className="mx-auto mb-4 mt-4 grid max-w-md grid-cols-12 px-4 py-16 md:max-w-[1024px]">
+      <CardBody className="col-span-8 mx-auto my-0 pb-8 pl-4 pr-4">
         <p className="p-2 text-base leading-normal">
           Hi, my name is{" "}
           <span className="text- block text-6xl font-light text-blue-900">
@@ -51,8 +51,8 @@ export default function Home() {
           Front-End Developer.
         </p>
       </CardBody>
-      <CardBody className="col-start-7 col-end-13 row-start-2 row-end-5 text-center">
-        <h1 className="text-5xl">Blog Leao</h1>
+      <CardBody className="col-start-9 col-end-13 mx-auto my-0 pb-8 pl-4 pr-4">
+        {/* <h1 className="text-5xl">Blog Leao</h1> */}
         {posts.map((post, idx) => (
           <PostCard key={idx} {...post} />
         ))}

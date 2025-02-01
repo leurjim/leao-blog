@@ -1,6 +1,7 @@
 "use client";
 
 import AppNavbar from "@/components/app-navbar";
+import { Component } from "@/components/footer";
 import Providers from "@/components/providers";
 
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
           <main className="flex-grow overflow-auto bg-[url(/light-bg.svg)] bg-cover bg-repeat dark:bg-[url(/dark-bg.svg)]">
             {children}
           </main>
+          <Component />
         </Providers>
       </body>
     </html>
