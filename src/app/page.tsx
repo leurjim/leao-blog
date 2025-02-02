@@ -29,34 +29,37 @@ export default function Home() {
   );
 
   return (
-    <Card className="mx-auto mb-4 mt-4 grid max-w-md grid-cols-12 px-4 py-16 md:max-w-[1024px]">
-      <CardBody className="col-span-8 mx-auto my-0 pb-8 pl-4 pr-4">
-        <p className="p-2 text-base leading-normal">
-          Hi, my name is{" "}
-          <span className="text- block text-6xl font-light text-blue-900">
-            Leao Urbina.
-          </span>
-        </p>
+    <section className="px-4 py-16 md:mx-auto md:my-0 md:max-w-[1024px]">
+      <Card className="gap-2 px-8 md:grid md:grid-cols-12">
+        <CardBody className="md:col-start-1 md:col-end-9 md:row-start-1 md:row-end-2 md:text-left">
+          <p className="p-2 text-base leading-normal">
+            Hi, my name is{" "}
+            <span className="text- block text-6xl font-light text-blue-900">
+              Leao Urbina.
+            </span>
+          </p>
 
-        <h2 className="justify-between p-2 text-6xl">
-          I develop the front end of websites.
-        </h2>
+          <h2 className="justify-between p-2 text-6xl">
+            I develop the front end of websites.
+          </h2>
 
-        <p className="p-2 text-base leading-normal">
-          I'm a developer specializing in HTML, CSS, JAVASCRIPT, REACT, NEXTJS.
-        </p>
+          <p className="p-2 text-base leading-normal">
+            I'm a developer specializing in HTML, CSS, JAVASCRIPT, REACT,
+            NEXTJS.
+          </p>
 
-        <p className="p-2 text-base leading-normal">
-          Currently, I'm making a career switch from telecommunications to
-          Front-End Developer.
-        </p>
-      </CardBody>
-      <CardBody className="col-start-9 col-end-13 mx-auto my-0 pb-8 pl-4 pr-4">
-        {/* <h1 className="text-5xl">Blog Leao</h1> */}
-        {posts.map((post, idx) => (
-          <PostCard key={idx} {...post} />
-        ))}
-      </CardBody>
-    </Card>
+          <p className="p-2 text-base leading-normal">
+            Currently, I'm making a career switch from telecommunications to
+            Front-End Developer.
+          </p>
+        </CardBody>
+        <CardBody className="md:col-start-9 md:col-end-13 md:row-start-1 md:row-end-2 md:justify-end">
+          {/* <h1 className="text-5xl">Blog Leao</h1> */}
+          {posts.map((post, idx) => (
+            <PostCard key={idx} {...post} />
+          ))}
+        </CardBody>
+      </Card>
+    </section>
   );
 }
